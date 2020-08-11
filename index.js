@@ -90,6 +90,7 @@ class Banner extends Component {
 
 const styles = StyleSheet.create({
     contCarrousel: {
+        height: 100
         //flex: 1
     }
 })
