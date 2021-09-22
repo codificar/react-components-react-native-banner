@@ -57,7 +57,7 @@ class Banner extends Component {
                 return (
                     <View style={styles.contCarrousel} onLayout={this._onLayoutDidChange}>
                         <Carousel
-                            delay={30000}
+                            delay={10000}
                             style={this.state.size}
                             autoplay
                             onAnimateNextPage={(p) => console.log(p)}
@@ -67,7 +67,7 @@ class Banner extends Component {
                                     key={image}
                                     style={[this.state.size, { height: 100 }]}
                                     source={image}
-                                    //resizeMode='contain'
+                                    resizeMode='stretch'
                                 />
                             ))}
                         </Carousel>
