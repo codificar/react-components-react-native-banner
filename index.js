@@ -22,7 +22,7 @@ class Banner extends Component {
             params: {
                 id: this.props.providerId,
                 token: this.props.providerToken,
-                position: this.props.position
+                position: this.props.position ? this.props.position : 'Top'
             }
         }).then(response => {
             if (response.data.success) {
