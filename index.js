@@ -10,8 +10,6 @@ class Banner extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            position: this.props.position ? this.props.position : 'Top',
-            route: this.props.route,
             banners: [],
             size: { width, height }
         }
@@ -24,7 +22,7 @@ class Banner extends Component {
             params: {
                 id: this.props.providerId,
                 token: this.props.providerToken,
-                position: this.state.position
+                position: this.props.position
             }
         }).then(response => {
             if (response.data.success) {
