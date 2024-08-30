@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://git.codificar.com.br/react-components/react-native-banner"
+    "url": "git+https://github.com/codificar/react-components-react-native-banner"
   },
   "dependencies": {
     "react-native-looped-carousel": "^0.1.13",
